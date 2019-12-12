@@ -1,0 +1,33 @@
+<nav class="navbar navbar-dark navbar-expand-lg navbar-scrolled border-bottom">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <div class="logoOFF" id="logo"></div>
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" [ngClass]="{ 'show': navbarOpen }">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                <li class="nav-item">
+                  <a class="btn btn-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-link" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-link" href="somos.html">¿Qué hacemos?</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="btn btn-link" href="contactanos.html">Contáctanos</a>
+                </li>
+              </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar"> 
+          </form>
+      </div>
+    </div>
+  </nav>
