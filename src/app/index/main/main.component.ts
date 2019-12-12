@@ -7,6 +7,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+  
   faFacebookF = faFacebookF;
   faInstagram=faInstagram;
   

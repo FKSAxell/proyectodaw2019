@@ -13,17 +13,19 @@ import { HacemosComponent } from './secundarias/hacemos/hacemos.component';
 import { DesarrolloComponent } from './secundarias/desarrollo/desarrollo.component';
 import { NoticiasComponent } from './secundarias/noticias/noticias.component';
 import { ContactoComponent } from './secundarias/contacto/contacto.component';
+import { BuscadorComponent } from './secundarias/buscador/buscador.component';
 const rutas: Routes = [
  { path: '', component: MainComponent },
  { path: 'biblioteca/:id/:id2', component: BibliotecaComponent},
  {path:'quehacemos',component: HacemosComponent},
  {path:"desarrollo",component:DesarrolloComponent},
  {path:"noticias",component:NoticiasComponent},
- {path:"contacto",component: ContactoComponent}
+ {path:"contacto",component: ContactoComponent},
+ {path:"buscador",component:BuscadorComponent}
 ];
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(rutas),FontAwesomeModule ],
-  declarations: [ AppComponent, NavComponent, FooterComponent, MainComponent, BibliotecaComponent, HacemosComponent, DesarrolloComponent, NoticiasComponent, ContactoComponent ],
+  declarations: [ AppComponent, NavComponent, FooterComponent, MainComponent, BibliotecaComponent, HacemosComponent, DesarrolloComponent, NoticiasComponent, ContactoComponent, BuscadorComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

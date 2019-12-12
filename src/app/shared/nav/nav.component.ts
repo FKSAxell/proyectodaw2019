@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faSearchengin } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -7,6 +7,7 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 })
 export class NavComponent implements OnInit {
   
+  faSearchengin = faSearchengin;
   navbarOpen = false;
    toggleNavbar() {
       this.navbarOpen = !this.navbarOpen;
