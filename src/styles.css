@@ -47,20 +47,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.logoOFF{
-  background-image: url(../img/logo1.png);
-  background-size: 276px 93px;
-  background-repeat: no-repeat;
-  height: 93px;
-  width: 276px;
-}
-.logoON{
-  background-image: url(../img/logoB.png);
-  background-size: 276px 93px;
-  background-repeat: no-repeat;
-  height: 93px;
-  width: 276px;
-}
+
 .social-icons {
   position: absolute;
   margin-bottom: 2rem;
