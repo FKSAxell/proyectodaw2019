@@ -8,12 +8,13 @@ import { FooterComponent } from './shared/footer/footer/footer.component';
 import { MainComponent } from './index/main/main.component';
 import { BibliotecaComponent } from './secundarias/biblioteca/biblioteca.component';
 import { Routes, RouterModule } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 const rutas: Routes = [
  { path: '', component: MainComponent },
  { path: 'biblioteca/:id/:id2', component: BibliotecaComponent}
 ];
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(rutas) ],
+  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(rutas),FontAwesomeModule ],
   declarations: [ AppComponent, NavComponent, FooterComponent, MainComponent, BibliotecaComponent ],
   bootstrap:    [ AppComponent ]
 })

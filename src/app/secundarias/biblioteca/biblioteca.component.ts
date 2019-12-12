@@ -13,7 +13,6 @@ export class BibliotecaComponent implements OnInit {
   }
 
   ngOnInit() {
-  
     this.iniciarlizarRecursos()
   }
   iniciarlizarRecursos(){
