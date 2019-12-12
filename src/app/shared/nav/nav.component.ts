@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faSearchengin } from '@fortawesome/free-brands-svg-icons';
+import introJs from 'intro.js/intro.js';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -13,9 +14,41 @@ export class NavComponent implements OnInit {
       this.navbarOpen = !this.navbarOpen;
   }
 
-  constructor() { }
+   ngAfterViewInit(): void {
+    this.intro();
+  }
 
-  ngOnInit() {
+  intro() {
+    let intro = introJs.introJs();
+    intro.setOptions({
+      steps: [
+        {
+          intro: "Bienvenido al Repositorio Virtual"
+        },
+        {
+          element: '#step1',
+          intro: "Esta es la pagina de inicio",
+          position: 'bottom'
+          
+        },
+        {
+          element: '#step2',
+          intro: "Aqui encontraras Noticias interesantes",
+          position: 'bottom'
+        },
+        {
+          element: '#step3',
+          intro: "La propuesta de valor de la pagina web",
+          position: 'bottom'
+        },
+        {
+          element: '#step4',
+          intro: "No dudes en contactarnos",
+          position: 'bottom'
+        }
+      ]
+    });
+    intro.start();
   }
 
 }

@@ -14,6 +14,8 @@ import { DesarrolloComponent } from './secundarias/desarrollo/desarrollo.compone
 import { NoticiasComponent } from './secundarias/noticias/noticias.component';
 import { ContactoComponent } from './secundarias/contacto/contacto.component';
 import { BuscadorComponent } from './secundarias/buscador/buscador.component';
+import { AgmCoreModule } from '@agm/core';
+import { LoginComponent } from './admin/login/login.component';
 const rutas: Routes = [
  { path: '', component: MainComponent },
  { path: 'biblioteca/:id/:id2', component: BibliotecaComponent},
@@ -21,11 +23,14 @@ const rutas: Routes = [
  {path:"desarrollo",component:DesarrolloComponent},
  {path:"noticias",component:NoticiasComponent},
  {path:"contacto",component: ContactoComponent},
- {path:"buscador",component:BuscadorComponent}
+ {path:"buscador",component:BuscadorComponent},
+ {path:"panel",component:LoginComponent}
 ];
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(rutas),FontAwesomeModule ],
-  declarations: [ AppComponent, NavComponent, FooterComponent, MainComponent, BibliotecaComponent, HacemosComponent, DesarrolloComponent, NoticiasComponent, ContactoComponent, BuscadorComponent ],
+  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(rutas),FontAwesomeModule,AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBgnAhaXUqhjORDr-TUZkumBUXwpkroAqg'
+    }) ],
+  declarations: [ AppComponent, NavComponent, FooterComponent, MainComponent, BibliotecaComponent, HacemosComponent, DesarrolloComponent, NoticiasComponent, ContactoComponent, BuscadorComponent, LoginComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

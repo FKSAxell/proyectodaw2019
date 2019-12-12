@@ -12,20 +12,23 @@
         <div class="collapse navbar-collapse" id="navbarResponsive" [ngClass]="{ 'show': navbarOpen }">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
                 <li class="nav-item">
-                  <a class="btn btn-link" routerLink="/" >Inicio</a>
+                  <a id ="step1" class="btn btn-link" routerLink="/" >Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="btn btn-link" routerLink="/noticias">Noticias</a>
+                  <a id ="step2" class="btn btn-link" routerLink="/noticias">Noticias</a>
                 </li>
                 <li class="nav-item">
-                  <a class="btn btn-link" href="/quehacemos">¿Qué hacemos?</a>
+                  <a id ="step3" class="btn btn-link" routerLink="/quehacemos">¿Qué hacemos?</a>
                 </li>
                 
                 <li class="nav-item">
-                  <a class="btn btn-link" href="/contacto">Contáctanos</a>
+                  <a id ="step4" class="btn btn-link" routerLink="/contacto">Contáctanos</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/buscador" class="btn btn-link">
+                  <a id ="step5" class="btn btn-link" href="https://proyectodaw20l9.stackblitz.io" >Panel</a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/buscador" class="btn btn-link">
                     <h3><fa-icon [icon]="faSearchengin"></fa-icon></h3>
                   </a>
                 </li>
