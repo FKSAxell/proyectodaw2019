@@ -9,13 +9,21 @@ import { MainComponent } from './index/main/main.component';
 import { BibliotecaComponent } from './secundarias/biblioteca/biblioteca.component';
 import { Routes, RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HacemosComponent } from './secundarias/hacemos/hacemos.component';
+import { DesarrolloComponent } from './secundarias/desarrollo/desarrollo.component';
+import { NoticiasComponent } from './secundarias/noticias/noticias.component';
+import { ContactoComponent } from './secundarias/contacto/contacto.component';
 const rutas: Routes = [
  { path: '', component: MainComponent },
- { path: 'biblioteca/:id/:id2', component: BibliotecaComponent}
+ { path: 'biblioteca/:id/:id2', component: BibliotecaComponent},
+ {path:'quehacemos',component: HacemosComponent},
+ {path:"desarrollo",component:DesarrolloComponent},
+ {path:"noticias",component:NoticiasComponent},
+ {path:"contacto",component: ContactoComponent}
 ];
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(rutas),FontAwesomeModule ],
-  declarations: [ AppComponent, NavComponent, FooterComponent, MainComponent, BibliotecaComponent ],
+  declarations: [ AppComponent, NavComponent, FooterComponent, MainComponent, BibliotecaComponent, HacemosComponent, DesarrolloComponent, NoticiasComponent, ContactoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

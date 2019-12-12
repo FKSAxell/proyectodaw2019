@@ -59,6 +59,8 @@ export class MainComponent implements OnInit {
   }
 
   inicializarMaterias(){
+
+    //https://api.myjson.com/bins/kojfg
     fetch('https://api.myjson.com/bins/kojfg')
     .then( respuesta => respuesta.json())
     .then( data => {

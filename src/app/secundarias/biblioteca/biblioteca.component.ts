@@ -20,7 +20,7 @@ export class BibliotecaComponent implements OnInit {
     let tag = this.route.snapshot.paramMap.get('id2');
     let materiah2= document.getElementsByClassName("text-black mt-0")[0]
     materiah2.appendChild(document.createTextNode(materia))
-    fetch('https://api.myjson.com/bins/1cfkpg')
+    fetch('https://api.myjson.com/bins/11k778')
     .then( respuesta => respuesta.json())
     .then( data => {
       let arreglo = data.codigos;
