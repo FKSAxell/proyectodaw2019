@@ -112,7 +112,7 @@ export class MainComponent implements OnInit {
           li.setAttribute("class","navbar-nav ml-auto my-2 col-lg-6")
           let a=document.createElement("a")
           a.setAttribute("class","btn btn-link")
-          a.setAttribute("href",materia)
+          a.setAttribute("href","/biblioteca/"+materia+"/"+tag)
           let txt = document.createTextNode(materia)
           a.appendChild(txt)
           li.appendChild(a)
