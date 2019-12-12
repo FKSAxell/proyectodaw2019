@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './shared/nav/nav.component';
-import { FooterComponent } from './shared/footer/footer/footer.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { MainComponent } from './index/main/main.component';
 import { BibliotecaComponent } from './secundarias/biblioteca/biblioteca.component';
 import { Routes, RouterModule } from '@angular/router';
